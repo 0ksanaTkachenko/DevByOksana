@@ -1,0 +1,85 @@
+.page-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.avatar-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.avatar-head,
+.avatar-hair-lower,
+.avatar-hair-top,
+.avatar-head,
+.avatar-pupils,
+.avatar-right-ear,
+.avatar-brows,
+.avatar-mouth,
+.avatar-neck-body,
+.avatar-left-ear,
+.avatar-pupils {
+  position: absolute;
+  width: 100%;
+}
+
+.avatar-head,
+.avatar-brows,
+.avatar-mouth {
+  z-index: 50;
+}
+
+.avatar-pupils {
+  z-index: 60;
+}
+
+.avatar-left-ear {
+  left: 10px;
+}
+
+.avatar-right-ear {
+  right: 3px;
+}
+
+/* 
+
+
+
+.avatar-pupils {
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-hair-lower,
+.avatar-hair-top,
+.avatar-brows,
+.avatar-mouth,
+.avatar-neck-body,
+.avatar-left-ear,
+.avatar-right-ear {
+  top: 0;
+  left: 0;
+}
+
+.avatar-left-ear {
+  top: 20px;
+  left: 10px;
+  width: 30px;
+}
+
+.avatar-right-ear {
+  top: 20px;
+  right: 10px;
+  width: 30px;
+}
+
+.avatar-mouth {
+  top: 60%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+} */

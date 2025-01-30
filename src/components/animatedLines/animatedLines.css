@@ -1,0 +1,35 @@
+/* fade-lines */
+
+.fade-lines .line {
+  fill: none;
+  stroke: var(--secondary-purple);
+  stroke-width: 3%;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: blur(2px);
+}
+
+.fade-lines-container {
+  top: 27%;
+  width: 100vw;
+  height: 300px;
+  top: -90px;
+}
+
+/* TwoCurvedLines */
+
+.curved-lines {
+  z-index: 10;
+  bottom: -90px;
+  left: 55%;
+  width: 30%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .curved-lines {
+    width: 40%;
+    left: 50%;
+    bottom: -40px;
+  }
+}

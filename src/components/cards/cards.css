@@ -1,0 +1,48 @@
+.card-container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1px;
+}
+
+.custom-card {
+  perspective: 1000px;
+}
+
+.custom-card:nth-child(n + 7):nth-child(-n + 8) {
+  grid-column: span 3;
+}
+
+.card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.4s;
+}
+
+.flipped .card-inner {
+  transform: rotateX(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: var(--background-black);
+  color: var(--text-primary);
+}
+
+.card-back {
+  background-color: var(--background-purple);
+  color: var(--text-primary);
+  transform: rotateX(180deg);
+}
+
+.firstRowText {
+  font-size: var(--font-size-med);
+}
+
+.lastRowText {
+  font-size: var(--font-size-big);
+}

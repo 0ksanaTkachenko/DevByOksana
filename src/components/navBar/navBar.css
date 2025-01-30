@@ -1,0 +1,17 @@
+.navbar-container {
+  z-index: 20;
+}
+
+.nav-links li {
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: var(--text-primary);
+  transform: var(--scale-hover);
+}
