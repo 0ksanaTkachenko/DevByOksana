@@ -16,7 +16,7 @@ const AboutScreen = React.forwardRef(({}, ref) => {
               <div className="about-text p-5 w-100">
                 <h4>About.</h4>
                 <p className="text-row-1">
-                  I'm a frontend developer based in Toronto, Canada
+                  I'm a frontend developer based in sunny Vietnam
                 </p>
                 <p className="text-row-2">Marketing Specialist in the past</p>
                 <p className="text-row-3">
@@ -26,12 +26,24 @@ const AboutScreen = React.forwardRef(({}, ref) => {
               </div>
               <div className="about-img d-flex justify-content-center align-items-center">
                 <img className="laptopImg h-auto" src={laptopImg} alt="" />
-                <div className="learn-more-circle position-absolute rounded-circle d-flex">
+                <motion.div
+                  className="learn-more-circle position-absolute rounded-circle d-flex"
+                  initial={{
+                    scale: 1, // Увеличение при наведении
+                    boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)', // Добавление тени
+                  }}
+                  whileHover={{
+                    scale: 1.1, // Увеличение при наведении
+                    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.3)', // Добавление тени
+                    rotate: 5, // Легкий наклон для динамичного эффекта
+                  }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }} // Плавность анимации
+                >
                   <div className="circle-text-container d-flex flex-column justify-content-center align-items-center text-center">
                     <p>My story</p>
                     <p>Learn a little bit more about me</p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
             <hr className="full-width-line w-100"></hr>

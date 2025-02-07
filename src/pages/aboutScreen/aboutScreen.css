@@ -14,8 +14,8 @@
 }
 
 .about-container {
-  display: grid; 
-  grid-template-columns: 45% 55%; 
+  display: grid;
+  grid-template-columns: 45% 55%;
   gap: 10px;
 }
 
@@ -54,23 +54,18 @@
 }
 
 .learn-more-circle {
-  width: 32vw; 
-  height: 32vw; 
   background-color: #7327cf;
-  top: -8vw; 
-  right: -8vw; 
+  width: 200px;
+  height: 200px;
+  right: 7vw;
+  top: 50px;
 }
 
 .circle-text-container {
-  position: relative; 
-  left: 15%; 
-  top: 10%; 
   color: white;
-  width: 50%; 
-}
-
-.circle-text-container p {
-  font-size: 30px; 
+  padding: 10%;
+  line-height: 1.1;
+  font-size: var(--font-size-small);
 }
 
 .full-width-line {
@@ -97,13 +92,6 @@
     margin-top: 5%;
   }
 
-  .learn-more-circle {
-    width: 35vw;
-    height: 35vw;
-    right: 0px;
-    top: -20%;
-  }
-
   .circle-text-container p {
     font-size: 30px;
   }
@@ -124,6 +112,10 @@
       rgba(255, 255, 255, 0.05) 25%,
       rgba(255, 255, 255, 0) 70% /* Полностью исчезает */
     );
+  }
+
+  .learn-more-circle {
+    top: -70px;
   }
 }
 
