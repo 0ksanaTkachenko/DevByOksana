@@ -5,12 +5,6 @@ import { fileURLToPath, URL } from 'url';
 export default defineConfig({
   base: '/DevByOksana/',
   plugins: [react()],
-  esbuild: {
-    loader: 'jsx',
-  },
-  build: {
-    outDir: 'dist',
-  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
