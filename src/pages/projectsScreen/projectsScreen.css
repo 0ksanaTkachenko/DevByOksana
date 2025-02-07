@@ -1,0 +1,13 @@
+.projectsScreen {
+  background-color: var(--background-purple);
+}
+
+.projects-title {
+  color: var(--text-primary);
+  font-size: var(--font-size-extra-big);
+  top: 150px;
+}
+
+.cards-container {
+  padding-top: 100px;
+}

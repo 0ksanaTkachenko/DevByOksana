@@ -14,8 +14,8 @@
 }
 
 .about-container {
-  display: grid; /* no */
-  grid-template-columns: 45% 55%; /* no */
+  display: grid; 
+  grid-template-columns: 45% 55%; 
   gap: 10px;
 }
 
@@ -36,7 +36,7 @@
 
 .about-text p {
   font-size: var(--font-size-med);
-  line-height: 1.2; /* no */
+  line-height: 1.2;
 }
 
 .about-text .text-row-2 {
@@ -54,23 +54,23 @@
 }
 
 .learn-more-circle {
-  width: 32vw; /* no */
-  height: 32vw; /* no */
+  width: 32vw; 
+  height: 32vw; 
   background-color: #7327cf;
-  top: -8vw; /* no */
-  right: -8vw; /* no */
+  top: -8vw; 
+  right: -8vw; 
 }
 
 .circle-text-container {
-  position: relative; /* no */
-  left: 15%; /* no */
-  top: 10%; /* no */
+  position: relative; 
+  left: 15%; 
+  top: 10%; 
   color: white;
-  width: 50%; /* no */
+  width: 50%; 
 }
 
 .circle-text-container p {
-  font-size: 30px; /* no */
+  font-size: 30px; 
 }
 
 .full-width-line {

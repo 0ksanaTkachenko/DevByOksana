@@ -1,0 +1,111 @@
+.project-card-container {
+  top: 15vh;
+}
+
+.projectCard {
+  color: var(--text-primary);
+  padding: 50px;
+  top: -10%;
+  gap: 30px;
+  height: 70vh;
+}
+
+.projectCard .text-container {
+  width: 55%;
+}
+
+.projectCard .img-container {
+  width: 45%;
+}
+
+.projectCard .title {
+  font-size: var(--font-size-big);
+}
+
+.projectCard .description {
+  font-size: var(--font-size-med-small);
+}
+
+.projectCard .tools {
+  font-size: var(--font-size-small);
+  opacity: 75%;
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.line-top {
+  width: 20%;
+}
+
+.line-bottom {
+  width: 50%;
+}
+
+.type-prompt {
+  display: none;
+}
+
+@media (max-width: 990px) {
+  .projectCard {
+    gap: 20px;
+  }
+
+  .line-bottom {
+    width: 80%;
+  }
+
+  .type-prompt {
+    display: flex;
+    color: rgba(255, 255, 255, 0.646);
+    padding-bottom: 5px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectCard .line-top {
+    width: 100%;
+  }
+
+  .projectCard .line-bottom {
+    width: 100%;
+  }
+
+  .projectCard {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .projectCard .text-container {
+    width: 100%;
+    height: 60%;
+  }
+
+  .projectCard .img-container {
+    width: 100%;
+    height: 40%;
+  }
+
+  .text-container div {
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 430px) {
+  .projectCard {
+    padding: 30px 30px;
+  }
+
+  .projectCard .description {
+    font-size: var(--font-size-med);
+  }
+}
+
+@media (max-width: 376px) {
+  .projectCard .description {
+    font-size: var(--font-size-med-small);
+  }
+}

@@ -35,28 +35,42 @@ body {
   --background-purple: #7227cf;
 
   --font-size-small: 1.3rem;
+  --font-size-med-small: 1.8rem;
   --font-size-med: 2.3rem;
   --font-size-big: 3.3rem;
   --font-size-bigger: 4.3rem;
+  --font-size-extra-big: 6rem;
 
   /* animation */
   --scale-hover: scale(1.2);
 }
 
+@media (max-width: 990px) {
+  :root {
+    --font-size-med-small: 1.5rem;
+    --font-size-small: 1.2rem;
+    --font-size-extra-big: 5.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --font-size-small: 1rem;
+    --font-size-med-small: 1.5rem;
     --font-size-med: 2rem;
     --font-size-big: 2.5rem;
     --font-size-bigger: 3rem;
+    --font-size-extra-big: 5rem;
   }
 }
 
 @media (max-width: 480px) {
   :root {
     --font-size-small: 0.7rem;
+    --font-size-med-small: 1.2rem;
     --font-size-med: 1.7rem;
     --font-size-big: 2.7rem;
     --font-size-bigger: 3.7rem;
+    --font-size-extra-big: 4.5rem;
   }
 }

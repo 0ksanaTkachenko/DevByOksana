@@ -127,8 +127,6 @@ const HomeScreen = React.forwardRef(
       };
     }, []);
 
-    console.log(isMobile);
-
     return (
       <motion.div className="homeScreen" ref={ref} onClick={handleFlipCards}>
         {isMobile ? (
